@@ -30,7 +30,7 @@ link()
 is_dot_file()
 {
     target_file=$1
-    if [[ $target_file =~ ^\. ]]
+    if [[ $target_file =~ ^\. ]] && [ $target_file != '.git' ]
     then
         return 0
     else
