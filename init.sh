@@ -22,10 +22,25 @@ link()
     fi
 }
 
+init_vim_plugins()
+{
+    if [ ! -e $HOME/.vim ]
+    then
+        mkdir $HOME/.vim
+        mkdir $HOME/.vim/bundle
+        git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle
+        echo 'create vim plugin dir & clone vundle'
+    else
+        echo '.vim dir already exists'
+    fi
+}
+
 for dot_file in $dot_files
 do
     if [ $dot_file != $self ]
     then
         link $dot_file
     fi
+
 done
+init_vim_plugins
