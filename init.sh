@@ -12,6 +12,11 @@ link()
         return 0
     fi
 
+    if ! is_dot_file $link_file
+    then
+        return 0
+    fi
+
     if [ ! -e $HOME/$link_file ]
     then
         echo "create link $link_file"
@@ -19,6 +24,17 @@ link()
     else
         echo "don't create link $link_file"
         return 0
+    fi
+}
+
+is_dot_file()
+{
+    target_file=$1
+    if [[ $target_file =~ ^\. ]]
+    then
+        return 0
+    else
+        return 1
     fi
 }
 
