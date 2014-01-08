@@ -9,12 +9,12 @@ link()
     link_file=$1
     if [ $0 == $link_file ]
     then
-        return 0
+        return 1
     fi
 
     if ! is_dot_file $link_file
     then
-        return 0
+        return 1
     fi
 
     if [ ! -e $HOME/$link_file ]
@@ -23,7 +23,7 @@ link()
         ln -s $current_dir/$link_file $HOME/$link_file
     else
         echo "don't create link $link_file"
-        return 0
+        return 1
     fi
 }
 
