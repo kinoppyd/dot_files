@@ -1,14 +1,39 @@
 #.bashrc
 
-alias ll="ls -la"
-alias grep="grep --color"
-alias vim="$HOME/local/bin/vim"
-alias vimrc="vim $HOME/.vimrc"
-alias bashrc="vim $HOME/.bashrc"
-alias resource="source $HOME/.bash_profile"
-
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedaabagacad
+
+# General alias
+alias bashrc="vim $HOME/.bashrc"
+alias diff="colordiff"
+alias grep="grep --color"
+alias ll="ls -la"
+alias vdiff="vimdiff"
+alias vim="$HOME/local/bin/vim"
+alias vimrc="vim $HOME/.vimrc"
+alias resource="source $HOME/.bash_profile"
+alias ssh="ssh -o ServerAliveInterval=60"
+
+# Git alias
+alias ga="git add"
+alias gc="git commit"
+alias gd="git diff"
+alias gs="git status"
+alias gco="git checkout"
+alias grod="git fetch && git rebase -i origin/develop"
+# Git config
+source $HOME/Development/git/contrib/completion/git-completion.bash
+
+# Ant alias
+alias cb="ant clean release"
+alias cbi="ant clean release install"
+alias bi="ant release install"
+
+# ADB alias
+alias atab="adb shell input keyevent KEYCODE_TAB"
+alias aent="adb shell input keyevent KEYCODE_ENTER"
+alias ai="adb shell input text"
+alias logcat="adb logcat"
 
 # Perlbrew
 export PERL_CPANM_OPT="--local-lib=~/perl5"
