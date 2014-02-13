@@ -21,7 +21,7 @@ alias ssh="ssh -o ServerAliveInterval=60"
 
 # Git alias
 alias ga="git add"
-alias gap-"git add -p"
+alias gap="git add -p"
 alias gc="git commit"
 alias gcv="git commit -v"
 alias gd="git diff"
