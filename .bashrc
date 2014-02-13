@@ -8,6 +8,7 @@ export PATH="/usr/local/bin:$PATH"
 export DEV_TOOL_HOME="$HOME/Development"
 
 # General alias
+alias abash="source ~/.bash_profile"
 alias bashrc="vim $HOME/.bashrc"
 alias diff="colordiff"
 alias grep="grep --color"
