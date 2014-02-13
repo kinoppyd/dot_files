@@ -3,6 +3,10 @@
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedaabagacad
 
+# PATH
+export PATH="/usr/local/bin:$PATH"
+export DEV_TOOL_HOME="$HOME/Development"
+
 # General alias
 alias bashrc="vim $HOME/.bashrc"
 alias diff="colordiff"
@@ -24,7 +28,7 @@ alias gs="git status"
 alias gco="git checkout"
 alias grod="git fetch && git rebase -i origin/develop"
 # Git config
-source $HOME/Development/git/contrib/completion/git-completion.bash
+source $DEV_TOOL_HOME/git/contrib/completion/git-completion.bash
 
 # Ant alias
 alias cb="ant clean release"
@@ -48,7 +52,7 @@ export GEM_HOME=$HOME/gem
 export PATH=$HOME/gem/bin:$PATH
 
 # Haxe
-export PATH=$HOME/develop/haxe:$PATH
+export PATH=$DEV_TOOL_HOME/haxe:$PATH
 
 # Other
 export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
