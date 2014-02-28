@@ -1,4 +1,5 @@
 #.bashrc
+EDITOR=vim
 
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedaabagacad
