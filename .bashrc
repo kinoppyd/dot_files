@@ -3,6 +3,10 @@ EDITOR=vim
 
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedaabagacad
+# default bashrc
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
