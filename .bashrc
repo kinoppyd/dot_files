@@ -49,10 +49,6 @@ alias logcat="adb logcat"
 
 # Perlbrew
 source $HOME/perl5/perlbrew/etc/bashrc
-export PERL_CPANM_OPT="--local-lib=~/perl5"
-export PATH=$HOME/perl5/bin:$PATH;
-export PERL5LIB=$HOME/perl5/lib/perl5:$PERL5LIB;
-export PERL5LIB=$HOME/perl5/lib/perl5/darwin-thread-multi-2level:$PERL5LIB;
 
 # Android
 export PATH="$PATH:$DEV_TOOL_HOME/eclipse:$DEV_TOOL_HOME/sdk/tools:$DEV_TOOL_HOME/sdk/platform-tools"
