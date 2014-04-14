@@ -48,6 +48,7 @@ alias ai="adb shell input text"
 alias logcat="adb logcat"
 
 # Perlbrew
+source $HOME/perl5/perlbrew/etc/bashrc
 export PERL_CPANM_OPT="--local-lib=~/perl5"
 export PATH=$HOME/perl5/bin:$PATH;
 export PERL5LIB=$HOME/perl5/lib/perl5:$PERL5LIB;
