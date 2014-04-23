@@ -30,7 +30,7 @@ alias gap="git add -p"
 alias gc="git commit"
 alias gcv="git commit -v"
 alias gd="git diff"
-alias gs="git status"
+alias gs="git status --branch --short"
 alias gco="git checkout"
 alias grod="git fetch && git rebase -i origin/develop"
 # Git config
