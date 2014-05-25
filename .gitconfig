@@ -1,0 +1,12 @@
+[user]
+	name = Kinoshita.Yasuhiro
+	email = WhoIsDissolvedGirl+github@gmail.com
+[core]
+	excludesfile = $HOME/.gitignore_global
+	editor = vim
+[color]
+	ui = true
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less

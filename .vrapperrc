@@ -1,0 +1,8 @@
+"" インクリメンタルサーチ
+set incsearch 
+"" 大文字小文字は無視する
+set ignorecase
+"" ただし、明確に大文字を使った場合は認識
+nnoremap <ESC><ESC> :nohlsearch<CR>
+
+
