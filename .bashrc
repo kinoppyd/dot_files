@@ -24,6 +24,10 @@ alias vimrc="vim $HOME/.vimrc"
 alias resource="source $HOME/.bash_profile"
 alias ssh="ssh -o ServerAliveInterval=60"
 
+# Git
+export GIT_HOME=$DEV_TOOL_HOME/git
+export PATH=$GIT_HOME/contrib/diff-highlight:$PATH
+
 # Git alias
 alias ga="git add"
 alias gap="git add -p"
