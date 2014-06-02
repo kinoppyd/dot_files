@@ -62,6 +62,10 @@ export ANDROID_HOME="$HOME/Development/sdk"
 export GEM_HOME=$HOME/gem
 export PATH=$GEM_HOME/bin:$PATH
 
+# Scala
+export SCALA_HOME=$HOME/local/share/scala
+export PATH=$SCALA_HOME/bin:$PATH
+
 # Haxe
 export PATH=$DEV_TOOL_HOME/haxe:$PATH
 
