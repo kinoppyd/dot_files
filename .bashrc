@@ -60,7 +60,7 @@ export ANDROID_HOME="$HOME/Development/sdk"
 
 # Ruby Gem
 export GEM_HOME=$HOME/gem
-export PATH=$HOME/gem/bin:$PATH
+export PATH=$GEM_HOME/bin:$PATH
 
 # Haxe
 export PATH=$DEV_TOOL_HOME/haxe:$PATH
