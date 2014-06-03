@@ -37,6 +37,9 @@ Bundle 'Shougo/neosnippet'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'altercation/vim-colors-solarized'
 
+"" Scala syntax
+Bundle 'derekwyatt/vim-scala'
+
 
 filetype plugin indent on
 
