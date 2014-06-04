@@ -62,6 +62,9 @@ export ANDROID_HOME="$HOME/Development/sdk"
 export GEM_HOME=$HOME/gem
 export PATH=$GEM_HOME/bin:$PATH
 
+# Java
+export JAVA_OPTS="-Dfile.encoding=UTF-8"
+
 # Scala
 export SCALA_HOME=$HOME/local/share/scala
 export PATH=$SCALA_HOME/bin:$PATH
