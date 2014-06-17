@@ -26,6 +26,9 @@ install nkf
 install cmake
 install sqlite
 install ngrep
+
+# database
+install mysql
 install redis
 
 # editor
