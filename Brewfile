@@ -26,6 +26,7 @@ install nkf
 install cmake
 install sqlite
 install ngrep
+install redis
 
 # editor
 install vim
