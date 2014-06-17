@@ -45,7 +45,7 @@ install brew-cask
 cask update
 
 # install cask packages
-cask install item2
+#cask install item2
 cask install virtualbox
 cask install vagrant
 cask install dropbox
