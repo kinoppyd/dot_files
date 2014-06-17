@@ -67,6 +67,9 @@ export JAVA_OPTS="-Dfile.encoding=UTF-8"
 export SCALA_HOME=$HOME/local/share/scala
 export PATH=$SCALA_HOME/bin:$PATH
 
+# activator script
+export PATH=$DEV_TOOL_HOME/activator:$PATH
+
 # Haxe
 export PATH=$DEV_TOOL_HOME/haxe:$PATH
 
