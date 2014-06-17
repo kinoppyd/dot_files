@@ -36,6 +36,9 @@ install tmux
 install zsh
 install zsh-completions
 
+# languages
+install sbt
+
 # jokes
 install sl
 install fortune
