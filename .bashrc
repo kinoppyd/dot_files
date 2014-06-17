@@ -71,5 +71,5 @@ export PATH=$SCALA_HOME/bin:$PATH
 export PATH=$DEV_TOOL_HOME/haxe:$PATH
 
 # Other
-export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/man:$MANPATH
