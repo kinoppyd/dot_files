@@ -22,6 +22,10 @@ alias vimrc="vim $HOME/.vimrc"
 alias resource="source $HOME/.bash_profile"
 alias ssh="ssh -o ServerAliveInterval=60"
 
+# Document
+export DOCUMENT_ROOT="$HOME/Documents"
+alias daynote='vim $DOCUMENT_ROOT/`date "+%Y%m%d"`'
+
 # Git
 export GIT_HOME=$DEV_TOOL_HOME/git
 export PATH=$GIT_HOME/contrib/diff-highlight:$PATH
