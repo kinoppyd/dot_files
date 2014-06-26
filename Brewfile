@@ -46,6 +46,8 @@ install sbt
 # jokes
 install sl
 install fortune
+install cowsay
+install cmatrix
 
 # Brew Cask
 install brew-cask
