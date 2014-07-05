@@ -43,7 +43,7 @@ alias gs="git status --branch --short"
 alias gco="git checkout"
 alias grod="git fetch && git rebase -i origin/develop"
 # Git config
-source $DEV_TOOL_HOME/git/contrib/completion/git-completion.bash
+source $GIT_HOME/contrib/completion/git-completion.bash
 
 # Ant alias
 alias cb="ant clean release"
