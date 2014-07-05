@@ -1,0 +1,3 @@
+# Hubコマンドを使用して、Gで該当のコミットのGithubページを開く
+bind main G !@hub browse -- commit/%(commit)
+bind diff G !@hub browse -- commit/%(commit)
