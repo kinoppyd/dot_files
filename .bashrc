@@ -8,6 +8,8 @@ fi
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
+export PREFIX="$HOME/usr/local"
+export PATH="$PREFIX/bin:$PATH"
 export DEV_TOOL_HOME="$HOME/Development"
 
 # General alias
