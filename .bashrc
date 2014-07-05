@@ -80,6 +80,11 @@ export PATH=$DEV_TOOL_HOME/activator:$PATH
 # Haxe
 export PATH=$DEV_TOOL_HOME/haxe:$PATH
 
+# Go
+export GOROOT="$HOME/local/go"
+export GOPATH="$HOME/.go"
+export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+
 # Other
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/man:$MANPATH
