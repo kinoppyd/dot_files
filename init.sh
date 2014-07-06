@@ -40,14 +40,14 @@ is_dot_file()
 
 init_vim_plugins()
 {
-    if [ ! -e $HOME/.vim ]
+    if [ ! -e $HOME/.vim/bundle/vundle ]
     then
         mkdir $HOME/.vim
         mkdir $HOME/.vim/bundle
-        git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle
+        git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle || exit 1
         echo 'create vim plugin dir & clone vundle'
     else
-        echo '.vim dir already exists'
+        echo '.vim dir already exists and initialized'
     fi
 }
 
