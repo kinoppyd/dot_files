@@ -26,6 +26,7 @@ install nkf
 install cmake
 install sqlite
 install ngrep
+install mercurial
 
 # database
 install mysql
