@@ -41,6 +41,11 @@ alias gd="git diff"
 alias gs="git status --branch --short"
 alias gco="git checkout"
 alias grod="git fetch && git rebase -i origin/develop"
+alias gbv="git branch --list -vv"
+# Git peco alias
+alias pgd="git status --short | peco | perl -pe 's/^...//' | xargs git diff"
+alias pgc="git status --short | peco | perl -pe 's/^...//' | xargs git checkout"
+alias pgb="git branch | peco | perl -pe 's/^..//'"
 # Git config
 source $GIT_HOME/contrib/completion/git-completion.bash
 
