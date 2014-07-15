@@ -13,7 +13,6 @@ export PATH="$PREFIX/bin:$PATH"
 export DEV_TOOL_HOME="$HOME/Development"
 
 # General alias
-alias abash="source ~/.bash_profile"
 alias bashrc="vim $HOME/.bashrc"
 alias diff="colordiff"
 alias grep="grep --color"
@@ -41,7 +40,6 @@ alias gac="git add . && git commit -v"
 alias gd="git diff"
 alias gs="git status --branch --short"
 alias gco="git checkout"
-alias grod="git fetch && git rebase -i origin/develop"
 alias gbv="git branch --list -vv"
 # Git peco alias
 alias pgd="git status --short | peco | perl -pe 's/^...//' | xargs git diff"
