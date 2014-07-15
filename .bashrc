@@ -24,8 +24,9 @@ alias resource="source $HOME/.bash_profile"
 alias ssh="ssh -o ServerAliveInterval=60"
 
 # Document
-export DOCUMENT_ROOT="$HOME/Documents"
-alias daynote='vim $DOCUMENT_ROOT/`date "+%Y%m%d"`'
+export DOCUMENT_ROOT="$HOME/Documents/daynotes"
+alias daynote='vim $DOCUMENT_ROOT/`date "+%Y%m%d".md`'
+alias daynotes="find $DOCUMENT_ROOT -maxdepth 1 -type f | grep '\d\d\d\d\d\d\d\d.md$' | sort -r | xargs cat | less"
 
 # Git
 export GIT_HOME=$DEV_TOOL_HOME/git
