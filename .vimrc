@@ -59,6 +59,13 @@ Bundle 'tpope/vim-endwise'
 "" ========== vim-indent-guides
 Bundle 'nathanaelkane/vim-indent-guides'
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+
+"" ========== vim-markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+" デフォルトで折りたたみをオフ
+let g:vim_markdown_folding_disabled=1
+
 let g:indent_guides_enable_on_vim_startup = 1
 
 "" ============================================= plugins
