@@ -12,3 +12,5 @@
 	diff = diff-highlight | less
 [push]
 	default = simple
+[merge]
+	tool = vimdiff
