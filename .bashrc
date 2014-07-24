@@ -44,7 +44,8 @@ alias gbv="git branch --list -vv"
 # Git peco alias
 alias pgd="git status --short | peco | perl -pe 's/^...//' | xargs git diff"
 alias pgc="git status --short | peco | perl -pe 's/^...//' | xargs git checkout"
-alias pgb="git branch | peco | perl -pe 's/^..//'"
+alias pgb="git branch -a | peco | perl -pe 's/^..//'"
+alias pgbc="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
 # Git config
 source $GIT_HOME/contrib/completion/git-completion.bash
 
