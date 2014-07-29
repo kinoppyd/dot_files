@@ -43,6 +43,7 @@ install zsh-completions
 
 # languages
 install sbt
+install jq
 
 # jokes
 install sl
