@@ -32,6 +32,7 @@ export GIT_HOME=$DEV_TOOL_HOME/git
 export PATH=$GIT_HOME/contrib/diff-highlight:$PATH
 
 # Git alias
+alias g="git"
 alias ga="git add"
 alias gap="git add -p"
 alias gc="git commit"
