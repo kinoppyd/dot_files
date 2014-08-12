@@ -42,6 +42,7 @@ alias gd="git diff"
 alias gs="git status --branch --short"
 alias gco="git checkout"
 alias gbv="git branch --list -vv"
+alias gpo="git push origin"
 # Git peco alias
 alias pgd="git status --short | peco | perl -pe 's/^...//' | xargs git diff"
 alias pgc="git status --short | peco | perl -pe 's/^...//' | xargs git checkout"
