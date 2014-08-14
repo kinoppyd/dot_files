@@ -12,6 +12,7 @@ tap thoughtbot/formulae
 install wget
 install curl
 install git
+install git-now
 install tig
 install tree
 install watch
