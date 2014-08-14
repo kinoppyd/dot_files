@@ -14,3 +14,9 @@
 	default = simple
 [merge]
 	tool = vimdiff
+[alias]
+    co = checkout
+    c = commit
+    p = push
+    b = branch
+    n = now --all
