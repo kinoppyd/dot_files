@@ -50,6 +50,8 @@ alias pgb="git branch -a | peco | perl -pe 's/^..//'"
 alias pgbc="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
 # Git config
 source $GIT_HOME/contrib/completion/git-completion.bash
+# peco for git
+alias gp="peco | sed -e 's/^...//'"
 
 # Ant alias
 alias cb="ant clean release"
