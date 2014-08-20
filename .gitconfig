@@ -19,4 +19,4 @@
     c = commit
     p = push
     b = branch
-    n = now --all
+    n = now --all --stat
