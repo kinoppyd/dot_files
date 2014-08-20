@@ -32,6 +32,9 @@ install sqlite
 install ngrep
 install mercurial
 
+# node.js
+install npm
+
 # database
 install mysql
 install redis
