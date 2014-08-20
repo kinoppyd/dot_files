@@ -1,3 +1,7 @@
 # Hubコマンドを使用して、Gで該当のコミットのGithubページを開く
 bind main G !@hub browse -- commit/%(commit)
 bind diff G !@hub browse -- commit/%(commit)
+
+# 選択しているコミットから現在までを、rebase -i する
+bind main R !git rebase -i %(commit)
+bind diff R !git rebase -i %(commit)
