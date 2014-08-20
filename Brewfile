@@ -23,6 +23,9 @@ install openssl
 install libyaml
 install nkf
 
+# commands
+install dfc
+
 # develop
 install cmake
 install sqlite
