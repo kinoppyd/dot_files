@@ -49,7 +49,10 @@ alias pgc="git status --short | peco | perl -pe 's/^...//' | xargs git checkout"
 alias pgb="git branch -a | peco | perl -pe 's/^..//'"
 alias pgbc="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
 # Git config
-source $GIT_HOME/contrib/completion/git-completion.bash
+if [ -f $GIT_HOME/contrib/completion/git-completion.bash ]
+then
+    source $GIT_HOME/contrib/completion/git-completion.bash
+fi
 # peco for git
 alias gp="peco | sed -e 's/^...//'"
 
@@ -65,7 +68,10 @@ alias ai="adb shell input text"
 alias logcat="adb logcat"
 
 # Perlbrew
-source $HOME/perl5/perlbrew/etc/bashrc
+if [ -f $HOME/perl5/perlbrew/etc/bashrc ]
+then
+    source $HOME/perl5/perlbrew/etc/bashrc
+fi
 
 # Android
 export PATH="$PATH:$DEV_TOOL_HOME/eclipse:$DEV_TOOL_HOME/sdk/tools:$DEV_TOOL_HOME/sdk/platform-tools"
