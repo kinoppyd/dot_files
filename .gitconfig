@@ -15,6 +15,9 @@
 [merge]
 	tool = vimdiff
 [alias]
+    s = status
+    m = merge
+    a = add
     co = checkout
     c = commit
     p = push
