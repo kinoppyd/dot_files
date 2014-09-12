@@ -44,10 +44,9 @@ alias gco="git checkout"
 alias gbv="git branch --list -vv"
 alias gpo="git push origin"
 # Git peco alias
-alias pgd="git status --short | peco | perl -pe 's/^...//' | xargs git diff"
-alias pgc="git status --short | peco | perl -pe 's/^...//' | xargs git checkout"
-alias pgb="git branch -a | peco | perl -pe 's/^..//'"
-alias pgbc="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
+alias gsp="git status --short | peco | perl -pe 's/^...//' | xargs "
+alias gbp="git branch -a | peco | perl -pe 's/^..//'"
+alias gbcp="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
 # Git config
 if [ -f $GIT_HOME/contrib/completion/git-completion.bash ]
 then
@@ -99,6 +98,9 @@ export PATH=$DEV_TOOL_HOME/haxe:$PATH
 export GOROOT="$HOME/local/go"
 export GOPATH="$HOME/.go"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+
+# GHQ
+alias repos="ghq list -p | peco"
 
 # Other
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
