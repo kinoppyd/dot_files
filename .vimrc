@@ -110,13 +110,13 @@ map <Space>ptv <ESC>:'<,'> ! perltidy -pbp<CR>
 ""nmap <C-K> :bn<CR>
 
 "" ==========インデント系
-"" タブ文字を4文字で表示
-set tabstop=4
+"" タブ文字を2文字で表示
+set tabstop=2
 """" tabキーでスペース挿入
 set expandtab
-set softtabstop=4
+set softtabstop=2
 """" 自動整形のインデント幅を4にする
-set shiftwidth=4
+set shiftwidth=2
 "" タブと改行を記号表示
 set list
 set listchars=tab:>\ ,eol:<
