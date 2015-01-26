@@ -28,6 +28,7 @@ install dfc
 
 # develop
 install cmake
+install ctags
 install sqlite
 install ngrep
 install mercurial
