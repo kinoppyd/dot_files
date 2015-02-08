@@ -33,6 +33,12 @@ brew install sqlite
 brew install ngrep
 brew install mercurial
 
+# rbenv
+brew install rbenv
+brew install ruby-build
+brew install rbenv-gemset
+brew install rbenv-gem-rehash
+
 # node.js
 brew install npm
 
