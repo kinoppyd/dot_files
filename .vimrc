@@ -7,8 +7,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-Bundle 'vim-perl/vim-perl'
-Bundle 'hotchpotch/perldoc-vim'
+
 Bundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key = "'"
 
@@ -43,6 +42,10 @@ Bundle 'Shougo/neosnippet-snippets'
 
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'altercation/vim-colors-solarized'
+
+"" ========== perl syntax & doc
+Bundle 'vim-perl/vim-perl'
+Bundle 'hotchpotch/perldoc-vim'
 
 "" ========== Scala syntax
 Bundle 'derekwyatt/vim-scala'
