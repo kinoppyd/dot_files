@@ -21,8 +21,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'gregsexton/gitv'
 noremap <Space>g :Gitv<CR>
 
-Bundle 'tpope/vim-pathogen'
-execute pathogen#infect()
 Bundle 'scrooloose/syntastic'
 
 Bundle 'bling/vim-airline'
