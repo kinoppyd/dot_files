@@ -159,6 +159,9 @@ set nowrap
 
 nnoremap <Space>. :<C-u>tabedit ~/_vimrc<CR>
 
+"" ========= 移動系
+set scrolloff=4
+
 "" ========== 全角時ハイライト
 if has('multi_byte_ime') || has('xim')
 	highlight Cursor guifg=NONE guibg=WHITE
