@@ -8,21 +8,27 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+"" ========== easy motion
 Bundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key = "'"
 
+"" ========== quick run
 Bundle 'thinca/vim-quickrun'
 " quickrunのショートカット
 nmap <Leader>r <plug>(quickrun)
 
+"" ========== git
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-
 Bundle 'gregsexton/gitv'
 noremap <Space>g :Gitv<CR>
 
+"" ========== surround
+Bundle 'tpope/vim-surround'
+
+"" ========== syntastic
 Bundle 'scrooloose/syntastic'
 
+"" ========== airline
 Bundle 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_detect_iminsert=1
@@ -30,14 +36,19 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '>'
 let g:airline_theme='jellybeans'
 
+"" ========== nerdtree
 Bundle 'scrooloose/nerdtree'
 noremap <Space>n :NERDTreeToggle<CR>
 
+"" ========== unite.vim
 Bundle 'Shougo/unite.vim'
+
+"" ========== neosnippet
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 
+"" ========== color scheme
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'altercation/vim-colors-solarized'
 
@@ -60,7 +71,7 @@ augroup AlpacaTags
     endif
 augroup END
 
-"" endwise
+"" ========== endwise
 Bundle 'tpope/vim-endwise'
 
 "" ========== vim-indent-guides
