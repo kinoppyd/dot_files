@@ -25,6 +25,10 @@ brew install nkf
 
 # commands
 brew install dfc
+brew tap peco/peco
+brew install peco
+brew tap motemen/ghq
+brew install ghq
 
 # develop
 brew install cmake
