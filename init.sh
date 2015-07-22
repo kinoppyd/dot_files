@@ -61,7 +61,7 @@ clone_git_repository()
   if [ ! -e $HOME/Development/git ]
   then
     echo 'clone git/git repository'
-    git clone git@github.com:git/git.git
+    git clone git@github.com:git/git.git $HOME/Development/git
   else
     echo 'git tools already exists'
   fi
