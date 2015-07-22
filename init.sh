@@ -7,7 +7,7 @@ current_dir=`pwd`
 link()
 {
     link_file=$1
-    if [ $0 == $link_file ]
+    if [ $0 = $link_file ]
     then
         return 1
     fi
