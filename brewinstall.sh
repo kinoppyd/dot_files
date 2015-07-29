@@ -22,6 +22,7 @@ brew install --default-names gnu-tar
 brew install openssl
 brew install libyaml
 brew install nkf
+brew install ag
 
 # commands
 brew install dfc
