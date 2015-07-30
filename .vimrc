@@ -85,6 +85,8 @@ Plugin 'plasticboy/vim-markdown'
 " デフォルトで折りたたみをオフ
 let g:vim_markdown_folding_disabled=1
 
+"" ========== silver-search
+Bundle 'rking/ag.vim'
 
 "" ============================================= plugins
 
