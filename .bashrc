@@ -1,9 +1,14 @@
 #.bashrc
 EDITOR=vim
 
-# default bashrc
+# system bashrc
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
+fi
+
+# default bashrc
+if [ -f $HOME/.bashrc_default ]; then
+    . $HOME/.bashrc_default
 fi
 
 # PATH
