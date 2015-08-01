@@ -82,8 +82,10 @@ export PATH="$PATH:$DEV_TOOL_HOME/eclipse:$DEV_TOOL_HOME/sdk/tools:$DEV_TOOL_HOM
 export ANDROID_HOME="$HOME/Development/sdk"
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init -)"
+fi
 
 # Ruby Gem
 export GEM_HOME=$HOME/gem
