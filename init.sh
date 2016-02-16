@@ -51,6 +51,18 @@ init_vim_plugins()
     fi
 }
 
+init_tmux_plugins()
+{
+    if [ ! -e $HOME/.tmux ]
+    then
+      mkdir -p $HOME/.tmux/plugins
+      git clone https://github.com/erikw/tmux-powerline.git $HOME/.tmux/plugins/tmux-powerline || exit 1
+      echo 'create tmux plugin dir & clone powerline'
+    else
+      echo '.tmux/plugins dir already exists'
+    fi
+}
+
 clone_git_repository()
 {
   if [ ! -e $HOME/Development ]
