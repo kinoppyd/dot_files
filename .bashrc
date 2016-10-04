@@ -1,5 +1,5 @@
 #.bashrc
-EDITOR=vim
+export EDITOR=vim
 
 # system bashrc
 if [ -f /etc/bashrc ]; then
