@@ -40,14 +40,15 @@ is_dot_file()
 
 init_vim_plugins()
 {
-    if [ ! -e $HOME/.vim/bundle/vundle ]
+    if [ ! -e $HOME/.vim/dein ]
     then
         mkdir $HOME/.vim
-        mkdir $HOME/.vim/bundle
-        git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle || exit 1
-        echo 'create vim plugin dir & clone vundle'
+        ln -s .vim/conf/ $HOME/.vim/conf
+        curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
+        sh dein_installer.sh $HOME/.vim/dein
+        echo 'install dein complete'
     else
-        echo '.vim dir already exists and initialized'
+        echo '.vim dir already exists and dein installed'
     fi
 }
 
