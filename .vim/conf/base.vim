@@ -61,6 +61,7 @@ set t_vb=
 set ruler
 set mouse=a
 set nowrap
+set t_Co=256
 
 "" ========= 移動系
 set scrolloff=4
