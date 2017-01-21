@@ -80,6 +80,18 @@ clone_git_repository()
   fi
 }
 
+add_global_bashrc()
+{
+  grep "source $HOME/.bashrc_global" $HOME/.bashrc
+  if [ $? = 1 ];
+  then
+    echo "source $HOME/.bashrc_global" >> $HOME/.bashrc
+    echo "append bashrc_global"
+  else
+    echo "bashrc_global already appended"
+  fi
+}
+
 for dot_file in $dot_files
 do
     if [ $dot_file != $self ]
@@ -90,3 +102,4 @@ do
 done
 init_vim_plugins
 clone_git_repository
+add_global_bashrc
