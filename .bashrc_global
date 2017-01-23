@@ -64,11 +64,6 @@ fi
 # peco for git
 alias gp="peco | sed -e 's/^...//'"
 
-# Ant alias
-alias cb="ant clean release"
-alias cbi="ant clean release install"
-alias bi="ant release install"
-
 # Bundler aliases
 alias be="bundle exec"
 alias bi="bundle install --path tmp/bundler"
@@ -94,10 +89,6 @@ if [ -d $HOME/.rbenv ]; then
   export PATH=$HOME/.rbenv/bin:$PATH
   eval "$(rbenv init -)"
 fi
-
-# Ruby Gem
-export GEM_HOME=$HOME/gem
-export PATH=$GEM_HOME/bin:$PATH
 
 # Java
 export JAVA_OPTS="-Dfile.encoding=UTF-8"
