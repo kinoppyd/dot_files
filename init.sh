@@ -38,12 +38,31 @@ is_dot_file()
     fi
 }
 
+init_vim_config()
+{
+    if [ ! -e $HOME/.vim/conf ]
+    then
+        mkdir $HOME/.vim
+        ln -s $PWD/.vim/conf/ $HOME/.vim/conf
+        echo 'vim config link created'
+        type envsubst
+        if [ $? = 0 ];
+        then
+          envsubst < $PWD/.vim/conf/plugins.vim.template > $PWD/.vim/conf/plugins.vim
+        else
+          echo 'envsubst command is not found'
+          echo 'you should create .vim/conf/plugins.vim manually'
+        fi
+    else
+        echo '.vim/conf dir already exists'
+    fi
+}
+
 init_vim_plugins()
 {
     if [ ! -e $HOME/.vim/dein ]
     then
         mkdir $HOME/.vim
-        ln -s .vim/conf/ $HOME/.vim/conf
         curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
         sh dein_installer.sh $HOME/.vim/dein
         echo 'install dein complete'
@@ -100,6 +119,7 @@ do
     fi
 
 done
+init_vim_config
 init_vim_plugins
 clone_git_repository
 add_global_bashrc

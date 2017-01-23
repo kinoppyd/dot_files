@@ -1,8 +1,8 @@
 if &compatible
   set nocompatible               " Be iMproved
 endif
-set runtimepath^=/home/ghostbrain/.vim/dein/repos/github.com/Shougo/dein.vim
-call dein#begin('/home/ghostbrain/.vim/dein')
+set runtimepath^=$HOME/.vim/dein/repos/github.com/Shougo/dein.vim
+call dein#begin('$HOME/.vim/dein')
 call dein#add('Shougo/dein.vim')
 
 call dein#add('tpope/vim-fugitive')
