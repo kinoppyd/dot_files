@@ -69,6 +69,10 @@ alias cb="ant clean release"
 alias cbi="ant clean release install"
 alias bi="ant release install"
 
+# Bundler aliases
+alias be="bundle exec"
+alias bi="bundle install --path tmp/bundler"
+
 # ADB alias
 alias atab="adb shell input keyevent KEYCODE_TAB"
 alias aent="adb shell input keyevent KEYCODE_ENTER"
