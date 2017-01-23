@@ -10,6 +10,10 @@ fi
 if [ -f $HOME/.bashrc_default ]; then
     . $HOME/.bashrc_default
 fi
+# local bashrc
+if [ -f $HOME/.bashrc_local ]; then
+    . $HOME/.bashrc_local
+fi
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
