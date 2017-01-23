@@ -1,2 +1,3 @@
 /dein_installer.sh
 /.vim/conf/plugins.vim
+/.config/nvim

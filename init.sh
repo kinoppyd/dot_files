@@ -71,6 +71,19 @@ init_vim_plugins()
     fi
 }
 
+init_neovim_config()
+{
+  mkdir .config/nvim
+  if [ ! -e .config/nvim/conf ]
+  then
+    ln -s $PWD/.vim/conf .config/nvim/conf
+  fi
+  if [ ! -e .config/nvim/init.vim ]
+  then
+    ln -s $PWD/.vimrc .config/nvim/init.vim
+  fi
+}
+
 init_tmux_plugins()
 {
     if [ ! -e $HOME/.tmux ]
@@ -121,5 +134,6 @@ do
 done
 init_vim_config
 init_vim_plugins
+init_neovim_config
 clone_git_repository
 add_global_bashrc
