@@ -45,17 +45,21 @@ init_vim_config()
         mkdir $HOME/.vim
         ln -s $PWD/.vim/conf/ $HOME/.vim/conf
         echo 'vim config link created'
-        type envsubst
-        if [ $? = 0 ];
-        then
-          envsubst < $PWD/.vim/conf/plugins.vim.template > $PWD/.vim/conf/plugins.vim
-        else
-          echo 'envsubst command is not found'
-          echo 'you should create .vim/conf/plugins.vim manually'
-        fi
     else
         echo '.vim/conf dir already exists'
     fi
+}
+
+build_vim_config()
+{
+  type envsubst > /dev/null
+  if [ $? = 0 ];
+  then
+    envsubst < $PWD/.vim/conf/plugins.vim.template > $PWD/.vim/conf/plugins.vim
+  else
+    echo 'envsubst command is not found'
+    echo 'you should create .vim/conf/plugins.vim manually'
+  fi
 }
 
 init_vim_plugins()
@@ -135,5 +139,6 @@ done
 init_vim_config
 init_vim_plugins
 init_neovim_config
+build_vim_config
 clone_git_repository
 add_global_bashrc
