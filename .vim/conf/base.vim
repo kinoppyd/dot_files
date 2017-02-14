@@ -11,6 +11,7 @@ filetype on
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
 autocmd BufNewFile,BufRead *.rake set filetype=ruby
+autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
 
 "" ========== バックアップ関連
 "" スワップファイルなし
