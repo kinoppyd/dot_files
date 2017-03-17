@@ -110,7 +110,7 @@ export GOPATH="$HOME/.go"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 
 # GHQ
-alias r="ghq list -p | peco"
+alias r='cd $(ghq list -p | peco)'
 
 # Other
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
