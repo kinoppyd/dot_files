@@ -22,6 +22,7 @@ call dein#add('plasticboy/vim-markdown')
 call dein#add('rking/ag.vim')
 call dein#add('ekalinin/Dockerfile.vim')
 call dein#add('kylef/apiblueprint.vim')
+call dein#add('derekwyatt/vim-scala')
 
 call dein#end()
 filetype plugin indent on
