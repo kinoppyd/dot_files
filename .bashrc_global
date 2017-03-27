@@ -52,27 +52,15 @@ alias gs="git status --branch --short"
 alias gco="git checkout"
 alias gbv="git branch --list -vv"
 alias gpo="git push origin"
-# Git peco alias
-alias gsp="git status --short | peco | perl -pe 's/^...//' | xargs "
-alias gbp="git branch -a | peco | perl -pe 's/^..//'"
-alias gbcp="git branch -a | peco | perl -pe 's/^..//' | xargs git checkout"
 # Git config
 if [ -f $GIT_HOME/contrib/completion/git-completion.bash ]
 then
     source $GIT_HOME/contrib/completion/git-completion.bash
 fi
-# peco for git
-alias gp="peco | sed -e 's/^...//'"
 
 # Bundler aliases
 alias be="bundle exec"
 alias bi="bundle install --path tmp/bundler"
-
-# ADB alias
-alias atab="adb shell input keyevent KEYCODE_TAB"
-alias aent="adb shell input keyevent KEYCODE_ENTER"
-alias ai="adb shell input text"
-alias logcat="adb logcat"
 
 # Perlbrew
 if [ -f $HOME/perl5/perlbrew/etc/bashrc ]
@@ -100,14 +88,6 @@ export PATH=$SCALA_HOME/bin:$PATH
 # Play Framework
 export PATH=$DEV_TOOL_HOME/play:$PATH
 export PATH=$DEV_TOOL_HOME/activator:$PATH
-
-# Haxe
-export PATH=$DEV_TOOL_HOME/haxe:$PATH
-
-# Go
-export GOROOT="$HOME/local/go"
-export GOPATH="$HOME/.go"
-export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 
 # GHQ
 alias r='cd $(ghq list -p | peco)'
