@@ -90,7 +90,6 @@ export PATH=$DEV_TOOL_HOME/play:$PATH
 export PATH=$DEV_TOOL_HOME/activator:$PATH
 
 # Go
-export GOROOT="$HOME/local/go"
 export GOPATH="$HOME/.go"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 
