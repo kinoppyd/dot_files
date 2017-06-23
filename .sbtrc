@@ -1,0 +1,8 @@
+alias a=assembly
+alias c=compile
+alias cl=clean
+alias r=run
+alias s=stage
+alias t=test
+alias to=testOnly
+alias tq=testQuick
