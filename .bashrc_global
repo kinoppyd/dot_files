@@ -22,12 +22,10 @@ export PATH="$PREFIX/bin:$PATH"
 export DEV_TOOL_HOME="$HOME/Development"
 
 # General alias
-alias bashrc="vim $HOME/.bashrc"
 alias diff="colordiff"
 alias grep="grep --color"
 alias ll="ls -lhAG"
 alias vdiff="vimdiff"
-alias vimrc="vim $HOME/.vimrc"
 alias resource="source $HOME/.bash_profile"
 alias ssh="ssh -o ServerAliveInterval=60"
 
