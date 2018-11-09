@@ -88,6 +88,14 @@ init_neovim_config()
   fi
 }
 
+init_dein()
+{
+   if [ ! -e $HOME/.vim/installer.sh ]
+     curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > $HOME/.vim/installer.sh
+     sh $HOME/.vim/installer.sh $HOME/.cache/dein
+   fi
+}
+
 init_tmux_plugins()
 {
     if [ ! -e $HOME/.tmux ]
@@ -138,6 +146,7 @@ do
 done
 init_vim_config
 init_vim_plugins
+init_dein
 init_neovim_config
 build_vim_config
 clone_git_repository
