@@ -38,15 +38,6 @@ brew install sqlite
 brew install ngrep
 brew install mercurial
 
-# rbenv
-brew install rbenv
-brew install ruby-build
-brew install rbenv-gemset
-brew install rbenv-gem-rehash
-
-# node.js
-brew install npm
-
 # database
 brew install mysql
 brew install redis
@@ -61,7 +52,6 @@ brew install zsh
 brew install zsh-completions
 
 # languages
-brew install sbt
 brew install jq
 
 # jokes
@@ -79,10 +69,6 @@ brew cask update
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install dropbox
-brew cask install evernote
-brew cask install yorufukurou
-brew cask install google-chrome
-brew cask install kobito
 
 # cleanup
 brew cleanup
