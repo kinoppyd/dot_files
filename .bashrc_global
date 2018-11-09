@@ -19,7 +19,7 @@ fi
 export PATH="/usr/local/bin:$PATH"
 export PREFIX="$HOME/local"
 export PATH="$PREFIX/bin:$PATH"
-export DEV_TOOL_HOME="$HOME/Development"
+export DEV_TOOL_HOME="$HOME/repositories"
 
 # General alias
 alias diff="colordiff"

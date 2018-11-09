@@ -102,15 +102,15 @@ init_tmux_plugins()
 
 clone_git_repository()
 {
-  if [ ! -e $HOME/Development ]
+  if [ ! -e $HOME/repositories ]
   then
-    mkdir $HOME/Development
+    mkdir $HOME/repositories
   fi
 
-  if [ ! -e $HOME/Development/git ]
+  if [ ! -e $HOME/repositories/git ]
   then
     echo 'clone git/git repository'
-    git clone --depth 1 https://github.com/git/git $HOME/Development/git
+    git clone --depth 1 https://github.com/git/git $HOME/repositories/git
   else
     echo 'git tools already exists'
   fi
