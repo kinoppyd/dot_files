@@ -91,6 +91,7 @@ init_neovim_config()
 init_dein()
 {
    if [ ! -e $HOME/.vim/installer.sh ]
+   then
      curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > $HOME/.vim/installer.sh
      sh $HOME/.vim/installer.sh $HOME/.cache/dein
    fi
