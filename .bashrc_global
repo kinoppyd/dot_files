@@ -59,7 +59,7 @@ fi
 
 # Bundler aliases
 alias be="bundle exec"
-alias bi="bundle install --path tmp/bundler"
+alias bi="bundle install"
 
 # Perlbrew
 if [ -f $HOME/perl5/perlbrew/etc/bashrc ]
