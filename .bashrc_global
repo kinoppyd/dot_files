@@ -105,3 +105,12 @@ alias r='cd $(ghq list -p | peco)'
 # Other
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/man:$MANPATH
+
+# Tool
+le() {
+  EE_TMPFILE=`mktemp`
+  vim $EE_TMPFILE
+  cat $EE_TMPFILE | pbcopy
+  rm $EE_TMPFILE
+  unset EE_TMPFILE
+}
