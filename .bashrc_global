@@ -32,6 +32,16 @@ alias ssh="ssh -o ServerAliveInterval=60"
 export DOCUMENT_ROOT="$HOME/Documents/daynotes"
 alias daynote='vim $DOCUMENT_ROOT/`date "+%Y%m%d".md`'
 alias daynotes="find $DOCUMENT_ROOT -maxdepth 1 -type f | grep '\d\d\d\d\d\d\d\d.md$' | sort -r | xargs cat | view -"
+le () {
+  TMPFLE=`mktemp`
+  vim $TMPFLE
+  if type pbcopy > /dev/null 2>&1; then
+    cat $TMPFLE | pbcopy
+  fi
+  cat $TMPFLE
+  rm $TMPFLE
+  unset TMPFLE
+}
 
 # Git
 export GIT_HOME=$DEV_TOOL_HOME/git
