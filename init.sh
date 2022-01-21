@@ -125,12 +125,12 @@ clone_git_repository()
   fi
 }
 
-add_global_bashrc()
+add_global_zshrc()
 {
-  grep "source $HOME/.bashrc_global" $HOME/.bashrc
+  grep "source $HOME/.bashrc_global" $HOME/.zshrc
   if [ $? = 1 ];
   then
-    echo "source $HOME/.bashrc_global" >> $HOME/.bashrc
+    echo "source $HOME/.bashrc_global" >> $HOME/.zshrc
     echo "append bashrc_global"
   else
     echo "bashrc_global already appended"
