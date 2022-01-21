@@ -3,7 +3,7 @@ export EDITOR=vim
 
 # system bashrc
 if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+#    . /etc/bashrc
 fi
 
 # default bashrc
@@ -62,9 +62,9 @@ alias gco="git checkout"
 alias gbv="git branch --list -vv"
 alias gpo="git push origin"
 # Git config
-if [ -f $GIT_HOME/contrib/completion/git-completion.bash ]
+if [ -f $GIT_HOME/contrib/completion/git-completion.zsh ]
 then
-    source $GIT_HOME/contrib/completion/git-completion.bash
+  fpath=($GIT_HOME/contrib/completion/git-completion.zsh $fpath)
 fi
 
 # Bundler aliases
@@ -86,7 +86,7 @@ export ANDROID_HOME="$HOME/Development/sdk"
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init - bash)"
+eval "$(anyenv init -)"
 
 # rbenv
 if [ -d $HOME/.rbenv ]; then
@@ -124,3 +124,5 @@ le() {
   rm $EE_TMPFILE
   unset EE_TMPFILE
 }
+
+autoload -Uz compinit && compinit -i
