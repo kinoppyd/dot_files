@@ -1,4 +1,10 @@
 /dein_installer.sh
 /.vim/conf/plugins.vim
 /.vim/dein
+
+/.config/AWSVPNClient/
+/.config/configstore/
+/.config/gcloud/
+/.config/gtk-2.0/
+/.config/iterm2/
 /.config/nvim
