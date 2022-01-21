@@ -39,7 +39,7 @@ brew install ngrep
 brew install mercurial
 
 # database
-brew install mysql
+brew install postgres
 brew install redis
 
 # editor
