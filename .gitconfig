@@ -1,6 +1,6 @@
 [user]
 	name = kinoppyd
-	email = WhoIsDissolvedGirl+github@gmail.com
+	email = ppyd@kinoppyd.dev
 [core]
 	excludesfile = $HOME/.gitignore_global
 	editor = vim
