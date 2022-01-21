@@ -4,7 +4,6 @@ brew upgrade
 
 # tap
 brew tap homebrew/versions
-brew tap caskroom/cask
 brew tap homebrew/binary
 brew tap thoughtbot/formulae
 
@@ -59,16 +58,6 @@ brew install sl
 brew install fortune
 brew install cowsay
 brew install cmatrix
-
-# Brew Cask
-brew install brew-cask
-brew cask update
-
-# install cask packages
-#cask install item2
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install dropbox
 
 # cleanup
 brew cleanup
