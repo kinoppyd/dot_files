@@ -1,10 +1,11 @@
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
-set runtimepath^=$HOME/.vim/dein/repos/github.com/Shougo/dein.vim
-call dein#begin('$HOME/.vim/dein')
-call dein#add('Shougo/dein.vim')
+set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
+call dein#begin('$HOME/.vim/dein')
+
+call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
 call dein#add('tpope/vim-fugitive')
 call dein#add('gregsexton/gitv')
 call dein#add('tpope/vim-surround')

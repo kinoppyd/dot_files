@@ -1,6 +1,8 @@
 /dein_installer.sh
+
 /.vim/conf/plugins.vim
 /.vim/dein
+.vim/.netrwhist
 
 /.config/AWSVPNClient/
 /.config/configstore/

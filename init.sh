@@ -64,11 +64,11 @@ build_vim_config()
 
 init_vim_plugins()
 {
-    if [ ! -e $HOME/.vim/dein ]
+    if [ ! -e $HOME/.cache/dein ]
     then
         mkdir $HOME/.vim
         curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
-        sh dein_installer.sh $HOME/.vim/dein
+        sh dein_installer.sh $HOME/.cache/dein
         echo 'install dein complete'
     else
         echo '.vim dir already exists and dein installed'
@@ -86,15 +86,6 @@ init_neovim_config()
   then
     ln -s $PWD/.vimrc .config/nvim/init.vim
   fi
-}
-
-init_dein()
-{
-   if [ ! -e $HOME/.vim/installer.sh ]
-   then
-     curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > $HOME/.vim/installer.sh
-     sh $HOME/.vim/installer.sh $HOME/.cache/dein
-   fi
 }
 
 init_tmux_plugins()
@@ -120,6 +111,10 @@ clone_git_repository()
   then
     echo 'clone git/git repository'
     git clone --depth 1 https://github.com/git/git $HOME/repositories/git
+    cd $HOME/repositories/git/contrib/diff-highlight
+    make
+    cd -
+
   else
     echo 'git tools already exists'
   fi
@@ -127,6 +122,8 @@ clone_git_repository()
 
 add_global_zshrc()
 {
+  touch $HOME/.zshrc
+
   grep "source $HOME/.bashrc_global" $HOME/.zshrc
   if [ $? = 1 ];
   then
@@ -147,7 +144,6 @@ do
 done
 init_vim_config
 init_vim_plugins
-init_dein
 init_neovim_config
 build_vim_config
 clone_git_repository
