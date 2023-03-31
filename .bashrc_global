@@ -61,6 +61,7 @@ alias gs="git status --branch --short"
 alias gco="git checkout"
 alias gbv="git branch --list -vv"
 alias gpo="git push origin"
+alias gpu="git push upstream"
 # Git config
 if [ -f $GIT_HOME/contrib/completion/git-completion.zsh ]
 then
