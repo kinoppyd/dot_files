@@ -130,3 +130,5 @@ le() {
 }
 
 autoload -Uz compinit && compinit -i
+
+bindkey -e
