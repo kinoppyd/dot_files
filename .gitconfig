@@ -24,3 +24,5 @@
     b = branch
     n = now --all --stat
     f = fetch
+[init]
+	defaultBranch = main
