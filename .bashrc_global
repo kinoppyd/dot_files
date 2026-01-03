@@ -132,3 +132,8 @@ le() {
 autoload -Uz compinit && compinit -i
 
 bindkey -e
+
+# binstub
+export PATH=./bin:$PATH
+
+eval $(/opt/homebrew/bin/brew shellenv)
