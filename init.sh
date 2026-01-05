@@ -147,5 +147,5 @@ init_vim_plugins
 init_neovim_config
 build_vim_config
 clone_git_repository
-add_global_bashrc
+add_global_zshrc
 git clone https://github.com/anyenv/anyenv ~/.anyenv
