@@ -11,3 +11,5 @@
 /.config/iterm2/
 /.config/github-copilot/
 /.config/mise/
+
+/.config/nvim/lazy-lock.json
