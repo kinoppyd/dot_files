@@ -23,10 +23,6 @@ fi
 # PATH
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/local/bin:$HOME/usr/local/bin:$PATH"
-export DEV_TOOL_HOME="$HOME/repositories"
-
-# homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # General alias
 alias diff="colordiff"
@@ -36,23 +32,8 @@ alias vdiff="vimdiff"
 alias resource="source $HOME/.bash_profile"
 alias ssh="ssh -o ServerAliveInterval=60"
 
-# Document
-export DOCUMENT_ROOT="$HOME/Documents/daynotes"
-alias daynote='vim $DOCUMENT_ROOT/`date "+%Y%m%d".md`'
-alias daynotes="find $DOCUMENT_ROOT -maxdepth 1 -type f | grep '\d\d\d\d\d\d\d\d.md$' | sort -r | xargs cat | view -"
-le () {
-  TMPFLE=`mktemp`
-  vim $TMPFLE
-  if type pbcopy > /dev/null 2>&1; then
-    cat $TMPFLE | pbcopy
-  fi
-  cat $TMPFLE
-  rm $TMPFLE
-  unset TMPFLE
-}
-
 # Git
-export GIT_HOME=$DEV_TOOL_HOME/git
+export GIT_HOME=$HOME/ghq/github.com/git/git
 export PATH=$GIT_HOME/contrib/diff-highlight:$PATH
 
 # Git alias
@@ -82,41 +63,6 @@ alias bi="bundle install"
 
 # Docker aliases
 alias dc="docker-compose"
-
-# Perlbrew
-if [ -f $HOME/perl5/perlbrew/etc/bashrc ]
-then
-    source $HOME/perl5/perlbrew/etc/bashrc
-fi
-
-# Android
-export PATH="$PATH:$DEV_TOOL_HOME/eclipse:$DEV_TOOL_HOME/sdk/tools:$DEV_TOOL_HOME/sdk/platform-tools"
-export ANDROID_HOME="$HOME/Development/sdk"
-
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
-# rbenv
-if [ -d $HOME/.rbenv ]; then
-  export PATH=$HOME/.rbenv/bin:$PATH
-  eval "$(rbenv init -)"
-fi
-
-# Java
-export JAVA_OPTS="-Dfile.encoding=UTF-8"
-
-# Scala
-export SCALA_HOME=$HOME/local/share/scala
-export PATH=$SCALA_HOME/bin:$PATH
-
-# Play Framework
-export PATH=$DEV_TOOL_HOME/play:$PATH
-export PATH=$DEV_TOOL_HOME/activator:$PATH
-
-# Go
-export GOPATH="$HOME/.go"
-export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 
 # GHQ
 alias r='cd $(ghq list -p | peco)'
