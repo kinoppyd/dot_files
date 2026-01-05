@@ -57,6 +57,10 @@ then
   fpath=($GIT_HOME/contrib/completion/git-completion.zsh $fpath)
 fi
 
+# mise
+eval "$(mise activate zsh)"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+
 # Bundler aliases
 alias be="bundle exec"
 alias bi="bundle install"
