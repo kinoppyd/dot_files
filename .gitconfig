@@ -3,7 +3,7 @@
 	email = ppyd@kinoppyd.dev
 [core]
 	excludesfile = $HOME/.gitignore_global
-	editor = vim
+	editor = nvim
 [color]
 	ui = true
 [pager]
