@@ -1,6 +1,13 @@
 local opt = vim.opt
 local api = vim.api
 
+-- syntax
+vim.cmd("syntax on")
+vim.cmd("filetype plugin indent on")
+
+-- colorscheme
+vim.cmd("colorscheme habamax")
+
 -- leader
 -- <Space>をleaderに、vimと違ってスペースはスペースらしい
 vim.g.mapleader = " "
