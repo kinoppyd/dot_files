@@ -85,6 +85,15 @@ opt.hidden = true
 -- カレントディレクトリを自動で移動
 opt.autochdir = true
 
+-- ruby実行してくれる君
+api.nvim_create_autocmd("FileType", {
+  pattern = "ruby",
+  callback = function()
+    api.nvim_set_keymap('n', '<leader>r', ':!ruby %<CR>', { noremap = true })
+    api.nvim_set_keymap('n', '<leader>R', ':!bundle exec ruby %<CR>', { noremap = true })
+  end,
+})
+
 require("config.lazy")
 require("config.neotree")
 
