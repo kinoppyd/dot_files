@@ -82,8 +82,8 @@ api.nvim_set_keymap('n', '<leader>k', ':bn<CR>', { noremap = true, silent = true
 opt.hidden = true
 
 -- その他
--- カレントディレクトリを自動で移動
-opt.autochdir = true
+-- ファイルが更新されたら自動でリロード
+opt.autoread = true
 
 -- ruby実行してくれる君
 api.nvim_create_autocmd("FileType", {
