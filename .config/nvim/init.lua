@@ -81,6 +81,14 @@ api.nvim_set_keymap('n', '<leader>k', ':bn<CR>', { noremap = true, silent = true
 -- バッファ移動時、保存を矯正しない
 opt.hidden = true
 
+-- terminal
+-- 下分割でターミナルモードを起動
+api.nvim_set_keymap('n', 'tt', '<cmd>belowright new<CR><cmd>terminal<CR>', { noremap = true, silent = true })
+api.nvim_create_autocmd("TermOpen", {
+  pattern = "*",
+  command = "startinsert"
+})
+
 -- その他
 -- ファイルが更新されたら自動でリロード
 opt.autoread = true
