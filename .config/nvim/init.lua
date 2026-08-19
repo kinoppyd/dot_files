@@ -102,6 +102,7 @@ api.nvim_create_autocmd("FileType", {
   end,
 })
 
+require("config.grep")
 require("config.lazy")
 require("config.neotree")
 
